@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1  onclick="dlt(event)">One</h1>
+    <h1  onclick="dlt(event)">Two</h1>
+    <h1 onclick="dlt(event)">Three</h1>
+    <h1 onclick="dlt(event)">Four</h1>
+    <h1  onclick="dlt(event)">Five</h1>
+    <h1  onclick="dlt(event)">Six</h1>
+    <script>
+        var one=document.getElementById("one")
+        function dlt(event){
+            event.target.remove()
+
+        }
+    </script>
+</body>
+</html>

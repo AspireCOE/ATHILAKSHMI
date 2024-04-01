@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="one">Name</h1>
+    <button onclick ="update(event)">John</button>
+    <button  onclick="update(event)">Praveen</button>
+    <button onclick="update(event)">Karthi</button>
+<script>
+ var one=document.getElementById("one")
+ function update(event){
+    one.textContent=event.target.textContent
+ }
+</script> 
+</body>
+</html>
