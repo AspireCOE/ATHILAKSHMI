@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WEcare</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        background-image: url('yoga.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .container {
+        max-width: 800px;
+        margin-top: 20%;
+        padding: 20px;
+        background-color:none;
+        margin-left:200px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    h1 {
+        color:white;
+        text-align: center;
+    }
+
+    p {
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .button {
+    display: inline-block;
+        margin: 0 auto;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+        width: 200px;
+        text-align: center;
+    }
+
+    .button:hover {
+        background-color: #45a049;
+        transform: scale(1.1);
+    }
+    .logo {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        padding: 20px;
+    }
+    nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px;
+    }
+
+    nav a {
+        color:white;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+        background-color: #555;
+        color: #fff;
+    }
+    .article {
+        display: inline-block;
+        width: 240px; /* Adjust the width to fit three articles in one line */
+        margin: 10px;
+        vertical-align: top;
+        box-sizing: border-box;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+        border-width: 2px;
+    border-color: black;
+    
+    }
+   
+
+    .article h2 {
+        color: #333;
+        margin-top: 0;
+    }
+
+    .article img {
+        max-width: 100%;
+        height: auto;
+    }
+     header {
+        background-color: black;
+        color: white;
+        padding: 30px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000; /* Ensure the header is above other content */
+    }
+#blog{
+    display:flex;
+    flex-direction: row;
+    width: 800px;
+    flex-wrap: wrap;
+    margin-left: 200px;
+}
+.button:first-child {
+        margin-right: 20px; /* Add more space between the first button and the second button */
+    }
+.button-container {
+        text-align: center;
+        margin-top: 30px;
+        justify-content:space-between;
+    }
+    @media screen and (max-width: 600px) {
+        .container {
+            max-width: 90%; /* Adjust container width for smaller screens */
+        }
+        .button-container {
+            margin-top: 20px; /* Adjust margin for button container */
+        }
+    }
+   #welcome{
+    width: 100%;
+        margin: 20px auto;
+        padding: 20px;
+        background-color:none;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        color: black;
+   } 
+  h2{
+    color: black;
+  }
+  #contact {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color:rgb(184, 207, 184);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
+        #contact p{
+            color:black;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        #contact h1{
+            color: #333;
+            text-align: center;
+            margin-top: 0;
+        }
+        .button-contact {
+            text-align: center;
+            margin-top: 30px;
+        }
+        #contact button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-right: 10px;
+        }
+
+        #contact button:hover {
+            background-color:black;
+        }
+       
+</style>
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <h1>WEcare </h1> <!-- Add your yoga logo here -->
+    </div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#welcome">About Us</a>
+        <a href="#blog">Explore</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+<main>
+    <section id="home">
+<div class="container">
+    <h1 style="color:black;">Welcome to WEcare Yoga Class </h1><br>
+    <h2 style="text-align: center;">YOUR PRACTICE, REIMAGINED</h2><br>
+    <h4 style="text-align: center;">Unlimited Yoga, fitness, and meditation for $20/month or $199/month </h4><br>
+    <p style="text-align: center;">"Discover your BMI and kickstart your fitness journey with our complimentary session!"</p>
+
+    <div class="button-container">
+        <a href="index.html" class="button">Check Your BMI</a>
+        <a href="register.html" class="button">Start Your Free Trial</a>
+    </div>
+    
+</div>
+</section>
+<br><br>
+<div  id="welcome">
+    <h1 style="color:black;">About Us</h1>
+    <br>
+    <hr>
+    <p>Welcome to our yoga studio! We are dedicated to providing a supportive and nurturing environment where individuals of all levels can explore the transformative practice of yoga.</p>
+    <p>Our experienced instructors are passionate about guiding students on their journey to wellness, offering classes that blend physical movement with mindfulness and breath awareness.</p>
+    <p>At our studio, we believe that yoga is more than just a physical exercise – it is a holistic practice that promotes balance, strength, and inner peace. Whether you are new to yoga or an experienced practitioner, we welcome you to join our community and discover the many benefits of this ancient practice.</p>
+    <p>Come visit us and experience the joy of yoga for yourself!</p>
+
+
+</div>
+<div  style= "text-align:center ;" class="vdo">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JAjyJKHXIow?si=hGHJMH7gTs4cVpyn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     <br><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dgvz9Uza4d8?si=bcfTEogCnHL1Cu5n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+<br>
+<h2 style="text-align: center;">Choose Your Level</h2><br><br>
+<div id ="blog">
+    
+<div class="article">
+    <h2>Breathing Exercise</h2>
+    <a href="https://www.healthline.com/health/breathing-exercise/240x240" target="_blank">
+        <img src="article1_image.webp" alt="Article 1 Image">
+    </a>
+    <p>pranayama</p>
+</div>
+
+<!-- Article 2 -->
+<div class="article">
+    <h2>Seated Forward Fold </h2>
+    <a href="https://rajyogarishikesh.com/top-10-yoga-poses-for-beginners.html#:~:text=Seated%20Forward%20Fold%20(%20Paschimottanasana%20)&text=Seated%20forward%20bend%20is%20the,to%20breathe%20through%20challenging%20positions.&text=Sit%20on%20the%20floor%20with,extended%20in%20front%20of%20you./240x240" target="_blank">
+        <img src="article2_image.jpeg" alt="Article 2 Image">
+    </a>
+    <p>Paschimottanasana</p>
+</div>
+
+<!-- Article 3 -->
+<div class="article">
+    <h2>Bridge Pose</h2>
+    <a href="https://news.google.com/articlesource3/240x240" target="_blank">
+        <img src="article3_image.webp" alt="Article 3 Image">
+    </a>
+    <p>Setubandhasana</p>
+</div>
+<div class="article">
+    <h2>Breathing Exercise</h2>
+    <a href="https://www.healthline.com/health/breathing-exercise/240x240" target="_blank">
+        <img src="article1_image.webp" alt="Article 1 Image">
+    </a>
+    <p>pranayama</p>
+</div>
+<div class="article">
+    <h2>Breathing Exercise</h2>
+    <a href="https://www.healthline.com/health/breathing-exercise/240x240" target="_blank">
+        <img src="article1_image.webp" alt="Article 1 Image">
+    </a>
+    <p>pranayama</p>
+</div>
+<div class="article">
+    <h2>Breathing Exercise</h2>
+    <a href="https://www.healthline.com/health/breathing-exercise/240x240" target="_blank">
+        <img src="article1_image.webp" alt="Article 1 Image">
+    </a>
+    <p>pranayama</p>
+</div>
+</div>
+<hr>
+<div id="contact">
+    <h1>Contact Us</h1><br>
+    <p>We would love to hear from you! But please read through the list below to help us respond to you in the most efficient and complete way possible.For any inquiries, feedback, or support requests, feel free to reach out to us through the following channels:</p>
+    
+    <ul >
+        <li>If your message is about a specific article, please leave a comment on the article’s page.</li>
+        <br>
+        <li>If you require technical support please list any error messages you are seeing and the URL of the page that you are having trouble with.</li>
+        <br>
+        <li>We do not accept guest posts or articles.</li><br>
+        <li>We do not accept any online solicitations.</li><br>
+        <li>For all other questions, comments and correspondence please use our contact form, filling it out as completely as possible. Selecting the correct subject will allow us to respond quickly to your request.</li><br>
+    </ul>
+
+    <div class="button-contact">
+        <a href="mailto:info@wecareyoga.com" class="button">Email Us</a>
+        <a href="tel:+1234567890" class="button">Call Us</a>
+    </div>
+<div>
+    
+</div>
+</div>
+<script>
+    document.getElementById("checkBMI").addEventListener("click", function() {
+        window.location.href = "index.html";
+    });
+</script>
+</main>
+</body>
+</html>
