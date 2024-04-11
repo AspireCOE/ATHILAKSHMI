@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Yoga Class Registration Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        background-image: url(yoga.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .container {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"], input[type="email"], select {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #555;
+    }
+   
+    
+</style>
+</head>
+<body>
+<div class="container">
+    <h2 >Online Yoga Class Registration Form</h2>
+    
+    <form>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="class-type">Class Type:</label>
+            <select id="class-type" name="class-type" required>
+                <option value="">Select Class Type</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="session-preference">Session Preference:</label>
+            <select id="session-preference" name="session-preference" required>
+                <option value="">Select Session Preference</option>
+                <option value="morning">Morning - 6.00 to 7.00</option>
+                <option value="afternoon">Morning - 7.00 to 8.00</option>
+                <option value="evening">Evening - 7.30 to 8.30</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="others" name="gender" value="others">
+            <label for="others">Others</label>
+        </div>
+        <div class="form-group">
+            <label for="session-package">Session Package:</label>
+            <select id="session-package" name="session-package" required>
+                <option value="">Select Session Package</option>
+                <option value="basic">Free - $0</option>
+                <option value="month">Monthly - $20</option>
+                <option value="premium">Yearly- $199</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit" onclick="yogaclass()">
+        </div>
+    </form>
+</div>
+<script>
+    function yogaclass(){
+        document.location.href="yogaclass.html";
+    }
+</script>
+</body>
+</html>
+
+
