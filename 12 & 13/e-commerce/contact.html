@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NostraS</title>
+    <!--Gooogle fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!--my css-->
+    <link rel="stylesheet" href="style.css">
+    <!--font awesome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .contact {
+        background-color: #1D232C;
+        color: white;
+        width: 800px;
+        margin-left: 250px;
+        margin-top: 10px;
+        height: 700px;
+        border-radius: 10px;
+
+
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .input-box {
+        height: 50px;
+        width: 700px;
+        box-radius: 10%;
+    }
+
+    .contact button {
+        background-color: aqua;
+        color: white;
+        cursor: pointer;
+        padding: 10px 20px;
+        /* Adjust padding to increase button size */
+        font-size: 16px;
+        /* Adjust font size to increase button size */
+        width: 100px;
+        /* Adjust width to increase button size */
+        height: 40px;
+
+
+    }
+
+    .contact-style {
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+
+    .textarea-box {
+        width: 700px;
+        height: 80px;
+        box-radius: 10%;
+    }
+</style>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <h1>Nostra</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collection</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+
+        </div>
+        <!--font awesome toggle-->
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <!--side navbar-->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collection</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+    <!--contact-->
+    <div class="contact">
+        <form>
+            <div class="contact-style">
+                <h2>Contact Us</h2><br><br>
+                <label>Name:</label><br>
+                <input type="text" class="input-box"><br><br>
+                <label>Email:</label><br>
+                <input type="email" class="input-box"><br><br>
+                <label>Address:</label><br>
+                <textarea type="email" class="textarea-box"></textarea><br><br>
+                <button id="contact-button">Submit</button>
+        </form>
+    </div>
+    </div>
+
+    <!--fotter-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h2 class="" headingText>NostraS</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse doloremque, aliquid praesentium veniam
+                    sequi iusto ut voluptates harum illo incidunt.</p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color:white"></i>
+                    <i class="fa-brands fa-twitter" style="color:white"></i>
+                    <i class="fa-brands fa-facebook" style="color:white"></i>
+                </div>
+            </div>
+        </div>
+        <p>@2024 NostraS.com</p>
+    </div>
+    <script src="collection.js"></script>
+    <script>
+        document.getElementById("contact-button").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+            window.location.href = "index.html"; // Redirect to the target page
+        });
+    </script>
+</body>
+
+</html>
