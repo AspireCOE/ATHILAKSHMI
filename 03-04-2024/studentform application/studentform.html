@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css" >
+
+</head>
+<body>
+    
+    <h1 style="text-align:center"> STUDENT FORM</h1>
+    
+    
+    <table  class="mytable" border="1">
+        <form id="studentForm">
+            <tr>
+                <td><b>Name</b></td>
+                <td> 
+                    <input type="text" id="name">
+                </td>
+            </tr>
+            <tr>
+                <td><b>Age</b></td>
+                <td> 
+                    <input type="number" id="age"> 
+                </td>
+            </tr>
+            <tr>
+                <td><b>Gender</b></td>
+                <td > 
+                    <div id="gender">
+                        <input type="radio"  name="Gender" >Male
+                        
+                        <input type="radio"   name="Gender" >Female
+                </div>
+                    
+                </td>
+            </tr>    
+                <tr>
+                    <td><b>Course</b></td>
+                    <td> 
+                        <select id="course">
+                            <option>JavaScript</option>
+                            <option>Java</option>
+                            <option>DotNet</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Email</b></td>
+                    <td> 
+                        <input  id="email"type="email">
+                    </td>
+                </tr> 
+                <tr>
+                    <td colspan="2">
+                        <button class="fullwidth" onclick="savedetails(event)">Save</button>
+                    </td>  
+                </tr>     
+        </form>
+    </table>
+    <br>
+    <table id="studentTable" border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Course</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody">
+        </tbody>
+    </table>
+    <script src="script.js">
+</script>
+</body>
+</html>
