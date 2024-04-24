@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        font-size: larger;
+        background-color:white;
+        color:black;
+        
+    }
+    div{
+        
+        margin-left:36%;
+        background-color: beige;
+            height: auto;
+            width: 400px;
+            margin: 0 auto; /* Centering the div */
+            padding: 20px; /* Adding padding for better spacing */
+            border-radius: 10px; /* Adding border-radius for rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+    }
+    button{
+        background-color: lightblue;
+        color:white;
+        cursor:pointer;
+        
+        border: none; /* Removing default button border */
+            padding: 15px 30px; /* Adding padding for better button appearance */
+            border-radius: 5px;
+    }
+    button:hover{
+     
+     background-color: lightblue;
+            color: gray;
+            cursor: pointer;
+            border: none; /* Removing default button border */
+            padding: 10px 20px; /* Adding padding for better button appearance */
+            border-radius: 5px;
+    }
+    input {
+            width: calc(100% - 12px); /* Adjusting input width to fit the container */
+            padding: 5px; /* Adding padding for better input appearance */
+            border: 1px solid lightblue; /* Adding border for input fields */
+            border-radius: 5px; /* Adding border-radius for rounded corners */
+    }
+    label, input {
+            display: block; /* Making label and input appear in a new line */
+            margin-bottom: 10px; /* Adding margin between each label-input pair */
+        }
+</style>
+<body>
+    <h2>Submit Form</h2>
+    <div>
+    <form action="/submit" method="post">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name">
+        <label for="password"> Password: </label>
+        <input type="text" id="password" name="password">
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email">
+        <label for="phone">Phone: </label>
+        <input type="tel" id="phone" name="phone"><br>
+        <button type="submit" >Submit</button>
+    </form>
+    </div>
+</body>
+</html>
