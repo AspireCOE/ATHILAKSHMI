@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "password": "password123",
+      "email": "john@example.com",
+      "phone": "123-456-7890"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "password": "securepass",
+      "email": "jane@example.com",
+      "phone": "987-654-3210"
+    },
+    {
+      "id": "cc5c",
+      "password": "Athi@1312",
+      "email": "20tuec012@skct.edu.in"
+    },
+    {
+      "id": "14dc",
+      "password": "Athi@1312",
+      "email": "20tuec012@skct.edu.in"
+    },
+    {
+      "id": "d4b5",
+      "username": "Athila",
+      "password": "as23",
+      "mobile": "9498810806",
+      "email": "athilakshmi1312@gmail.com"
+    }
+  ]
+}
