@@ -1,0 +1,19 @@
+.inactive {
+    color: gray;
+    font-style: italic;
+  }
+  
+  .active {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .loyal {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  .unknown {
+    color: red;
+  }
+  
