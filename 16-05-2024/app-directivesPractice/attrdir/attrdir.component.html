@@ -1,0 +1,12 @@
+<p>attrdir works!</p>
+<h1>Attribute Directives</h1>
+<h2>ngClass Example</h2>
+<p [ngClass]="['primary','big']">This is ngClass Example</p>
+<p>This is ngClass Example</p>
+<h2>Examples based on conditions</h2>
+Click if you want to apply red<input type="checkbox" [(ngModel)]="applyRed">
+<p [ngClass]="{'primary':applyRed}">ngClass examples based on given conditions</p> 
+
+<h2>ngStyle Example</h2>
+
+<p [ngStyle]="{'color':'blue','font-size':'40px'}"> This is ngStyle example text</p>

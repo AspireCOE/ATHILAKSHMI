@@ -1,0 +1,12 @@
+<p>movie works!</p>
+<h1>Structural Directives</h1>
+<h1>ngFor Example</h1>
+<ul>
+    <li *ngFor="let movie of movies">{{movie}}</li>
+</ul>
+ <h1>ngIf example</h1>
+ <!--<p *ngIf="false">Can you see me?</p>-->
+ <!-- ngIf="true means text will show"-->
+ <input type="checkbox" [(ngModel)]="showMe"> 
+ <p *ngIf="showMe">Can you see me?</p>
+ <!--<p *ngIf="hideMe">Can you see me?</p>-->

@@ -1,0 +1,24 @@
+<h2>Car Details</h2>
+<!-- Property Binding -->
+<img [src]="imageUrl" alt="Angular Logo">
+<button [disabled]="isDisabled">Click Me!</button>
+
+<!-- Attribute Binding -->
+<p [attr.id]="carId">Car ID: {{ carId }}</p>
+<p [attr.disabled]="isDisabled ? true : null">This is a {{ isDisabled ? 'disabled' : 'enabled' }} field.</p>
+<!--If isDisabled is true, the disabled attribute will be present on the <p> element, making it disabled. 
+  If isDisabled is false, the disabled attribute will not be present, making the element enabled.-->
+
+<!-- Class Binding -->
+<p [class.favorite]="isFavorite">This car is a favorite: {{ isFavorite }}</p>
+<p [class.favorite]="isNotFavorite">This car is a favorite: {{ isNotFavorite }}</p>
+<!--. If isFavorite is true, the favorite class will be applied to the <p> element; if isFavorite is false, the class will not be applied.-->
+<!-- Style Binding -->
+<p [style.color]="carColor">The color of the car is: {{ carColor }}</p>
+<p [style.font-size.px]="20">This text is 20 pixels in size.</p>
+<!-- Interpolation -->
+<p>Image URL: {{ imageUrl }}</p>
+<p>Is Disabled: {{ isDisabled }}</p>
+
+<!-- Event Binding: Responding to user events by binding event handlers to HTML elements -->
+ <button (click)="handleClick()">Click </button> 
