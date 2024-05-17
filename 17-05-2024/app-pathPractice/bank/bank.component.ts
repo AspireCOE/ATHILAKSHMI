@@ -1,0 +1,34 @@
+import { Component } from '@angular/core';
+import { bank } from './bank.model';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+@Component({
+  selector: 'app-bank',
+  standalone: true,
+  imports: [FormsModule, CommonModule],
+  templateUrl: './bank.component.html',
+  styleUrl: './bank.component.css'
+})
+export class BankComponent {
+  acctype:String="Savings";
+  getStatus(amount: number): string {
+    if (amount > 10000) {
+      return 'loyal';
+    } else if (amount >= 1000 && amount <= 10000) {
+      return 'active';
+    } else if (amount >= 500 && amount < 1000) {
+      return 'inactive';
+    } else {
+      return 'unknown';
+    }
+  }
+  
+  AccountDetail:bank[]=[
+    {AccountNumber:24359809014567,AccountHolderName:"Athila", TypeOfAccount:"savings",Amount:400,AccountCreatedDate:new Date(),BankName:"canara"},
+    {AccountNumber:25759809014567,AccountHolderName:"Priya", TypeOfAccount:"salary",Amount:80000,AccountCreatedDate:new Date(),BankName:"statebank"},
+    {AccountNumber:24359878014567,AccountHolderName:"Hinduja", TypeOfAccount:"savings",Amount:2000,AccountCreatedDate:new Date(),BankName:"indian overseas"},
+    {AccountNumber:24359809004567,AccountHolderName:"Kalyani", TypeOfAccount:"business",Amount:12500,AccountCreatedDate:new Date(),BankName:"bank of Baroda"},
+    {AccountNumber:24679809014567,AccountHolderName:"Reethu", TypeOfAccount:"business",Amount:60000,AccountCreatedDate:new Date(),BankName:"Reserve bank"},
+    {AccountNumber:24359809019057,AccountHolderName:"Rakshan", TypeOfAccount:"salary",Amount:60,AccountCreatedDate:new Date(),BankName:"canara"},
+  ]
+}

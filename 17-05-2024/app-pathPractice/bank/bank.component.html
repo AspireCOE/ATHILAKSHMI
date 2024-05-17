@@ -1,0 +1,43 @@
+
+<div class="bank-container">
+    <p class="message">Bank works!</p>
+    <div class="select-container">
+        <label for="acctype">Choose Type of Account:</label>
+        <select [(ngModel)]="acctype" id="acctype" class="form-control">
+            <option>savings</option>
+            <option>business</option>
+            <option>salary</option>
+        </select>
+    </div>
+    <table class="bank-table">
+        <thead>
+            <tr>
+                <th>Account Number</th>
+                <th>Account Holder Name</th>
+                <th>Type of Account</th>
+                <th>Amount</th>
+                <th>Account Created Date</th>
+                <th>Bank Name</th>
+                <th>Account Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let bank of AccountDetail">
+                <ng-container *ngIf="bank.TypeOfAccount === acctype">
+                    <td>{{bank.AccountNumber}}</td>
+                    <td>{{bank.AccountHolderName}}</td>
+                    <td>{{bank.TypeOfAccount}}</td>
+                    <td>{{bank.Amount}}</td>
+                    <td>{{bank.AccountCreatedDate}}</td>
+                    <td>{{bank.BankName}}</td>
+                    <td [ngSwitch]="getStatus(bank.Amount)">
+                        <p *ngSwitchCase="'inactive'" class="inactive">Inactive</p>
+                        <p *ngSwitchCase="'active'" class="active">Active</p>
+                        <p *ngSwitchCase="'loyal'" class="loyal">Loyal</p>
+                        <p *ngSwitchDefault class="unknown">Unknown</p>
+                    </td>
+                </ng-container>
+            </tr>
+        </tbody>
+    </table>
+</div>

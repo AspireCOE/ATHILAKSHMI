@@ -1,0 +1,12 @@
+<p>shop works!</p>
+<label for="shopname"></label>
+<input [(ngModel)]="shop.shopName" id="shopname">
+<p>{{shop.shopName}}</p>
+<div class="shop-container">
+    <p class="message">Shop works!</p>
+    <div class="form-group">
+        <label for="shopname">Shop Name:</label>
+        <input [(ngModel)]="shop.shopName" id="shopname" class="form-control">
+    </div>
+    <p class="shop-name">Shop Name: {{shop.shopName}}</p>
+</div>

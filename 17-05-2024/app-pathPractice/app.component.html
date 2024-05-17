@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-cogs icon"></i>Welcome to Angular</h1>
+    </header>
+    <div class="spacer"></div>
+    <nav>
+        <a [routerLink]="'shop'"><i class="fas fa-shopping-cart icon"></i>Shop</a>
+        <a [routerLink]="'product'"><i class="fas fa-box icon"></i>View Products</a>
+        <a [routerLink]="'student'"><i class="fas fa-graduation-cap icon"></i>Student Details</a>
+        <a [routerLink]="'bank'"><i class="fas fa-university icon"></i>Bank Details</a>
+    </nav>
+    <div class="container">
+        <router-outlet></router-outlet> <br>
+       {{5|cube}}
+       
+        {{123456|currency:'INR'}} <br>
+        {{123456|currency:'USD'}}<br>
+        {{title|uppercase}}<br>
+        {{title|lowercase}}<br>
+        {{ joinDate|date:'fullDate'}}<br>
+        {{joinDate|date:'shortDate'}}<br>
+        {{joinDate|date:'shortTime'}}<br>
+        {{joinDate|date:'fullTime'}}<br>
+        {{joinDate|date:'dd/MM/yyyy'}}<br>
+        {{joinDate|date:'d/M/yyyy'}}<br>
+    {{[2,5,4,3,8,9,3,0,7]|slice:2:5}}<br>
+    {{[2,5,4,3,8,9,3,0,7]|slice:3:-1}}
+    {{[2,5,4,3,8,9,3,0,7]|slice:-2}}    
+</div>
+   
+    <footer>
+        <p>&copy; 2024 Your Angular App</p>

@@ -1,0 +1,49 @@
+
+/* Header Styles */
+header {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    background-color: #2c3e50; /* Professional color */
+    
+}
+header h1 {
+    margin: 0;
+}
+/* Footer Styles */
+footer {
+    background-color: #34495e;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0;
+}
+/* Container Styles */
+.container {
+    border: 2px solid rgb(105, 68, 68);
+    min-height: calc(100vh - 100px); /* Adjust according to header and footer height */
+    padding: 20px;
+    text-align: center;
+}
+/* Navigation Styles */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+}
+/* Icon Styles */
+.icon {
+    margin-right: 5px;
+}
+.spacer {
+    height: 40px; /* Adjust as needed */
+}

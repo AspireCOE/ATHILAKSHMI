@@ -1,0 +1,54 @@
+/* Style for student page */
+
+/* Container */
+.student-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Message */
+.message {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Information */
+.info {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Button */
+.btn {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Heading */
+.heading {
+    font-size: 28px;
+    margin-top: 30px;
+    text-align: center;
+}

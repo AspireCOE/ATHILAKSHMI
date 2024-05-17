@@ -1,0 +1,90 @@
+
+/* Container */
+.bank-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Message */
+.message {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Select Container */
+.select-container {
+  margin-bottom: 20px;
+}
+
+/* Label */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Select */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Bank Table */
+.bank-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table Header */
+.bank-table th {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Table Body */
+.bank-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Status */
+.status {
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  width: 80px;
+}
+
+/* Status Colors */
+.inactive {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.active {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.loyal {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.unknown {
+  background-color: #95a5a6;
+  color: #fff;
+}

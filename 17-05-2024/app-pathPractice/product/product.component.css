@@ -1,0 +1,66 @@
+/* Style for product page */
+
+/* Container */
+.product-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Message */
+.message {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Category Select */
+.category-select {
+    margin-bottom: 20px;
+}
+
+/* Label */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Select */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Product Table */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Table Header */
+.product-table th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Table Body */
+.product-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternate Row Background */
+.product-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

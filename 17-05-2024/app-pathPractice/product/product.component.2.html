@@ -1,0 +1,39 @@
+
+
+<div class="product-container">
+    <p class="message">Product works!</p>
+    <div class="category-select">
+        <label for="categoryInput">Choose Category:</label>
+        <select [(ngModel)]="categoryInput" id="categoryInput" class="form-control">
+            <option>Electronics</option>
+            <option>Beverages</option>
+            <option>Stationary</option>
+        </select>
+    </div>
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Product Id</th>
+                <th>Product Name</th>
+                <th>Cost</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (product of products; track product) {
+           
+                <tr >
+                @if(product.category==categoryInput){
+                    <td>{{product.productId}}</td>
+                    <td>{{product.productName}}</td>
+                    <td>{{product.cost}}</td>
+                    <td>{{product.category}}</td>
+                }
+            
+                </tr>
+            
+        }
+        </tbody>
+    </table>
+    {{products| json}}
+</div>
